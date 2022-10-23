@@ -1,0 +1,274 @@
+.wrapper {
+   overflow: hidden;
+   position: relative;
+   min-height: 100vh;
+}
+.content {
+   width: 100%;
+   height: 100%;
+   background: url(../img/fon.jpg) 0 0 / cover no-repeat;
+   margin: 0 auto;
+   padding: 20px;
+}
+.transform {
+   position: relative;
+   height: 1430px;
+   perspective: 400px;
+}
+* img {
+   width: 350px;
+}
+.transform__translate {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.transform__translate:hover {
+   transform: translate(50%, 20%);
+   transition: all 2s ease;
+   z-index: 5;
+}
+.transform__translate:hover::before {
+   content: "transform: translate";
+   font-size: 30px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.transform__scale {
+   position: absolute;
+   top: 0;
+   left: 30%;
+}
+.transform__scale:hover {
+   position: absolute;
+   top: 7%;
+   left: 20%;
+   transform: scale(1.4);
+   transition: all 2s ease;
+}
+.transform__scale:hover::before {
+   content: "transform: scale";
+   font-size: 30px;
+   position: absolute;
+   top: -9%;
+   left: 0;
+}
+.transform__rotate {
+   position: absolute;
+   top: 0;
+   right: 25%;
+}
+.transform__rotate:hover {
+   transform: rotate(360deg);
+   transition: all 2s ease;
+}
+.transform__rotate:hover::before {
+   content: "transform: rotate";
+   font-size: 30px;
+}
+.transform__skew {
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+.transform__skew:hover {
+   transform: skew(18deg, 13deg);
+   transition: all 2s ease;
+   position: absolute;
+   right: 2%;
+   top: 3%;
+}
+.transform__skew:hover::before {
+   content: "transform: skew";
+   font-size: 30px;
+}
+.transform__matrix {
+   position: absolute;
+   left: 0;
+   top: 30%;
+}
+.transform__matrix:hover {
+   transform: matrix(-1, 0.5, 0.5, 1, 8, 11);
+   transition: all 3s ease;
+}
+.transform__matrix:hover::before {
+   content: "transform: matrix";
+   font-size: 30px;
+   position: absolute;
+   top: -10%;
+   left: 0;
+}
+.transform__transform-origin {
+   position: absolute;
+   top: 40%;
+   left: 26%;
+}
+.transform__transform-origin:hover {
+   transform-origin: 2em 25em;
+   transform: rotate(354deg);
+   transition: all 2s ease;
+}
+.transform__transform-origin:hover::before {
+   content: "transform-origin";
+   font-size: 30px;
+   position: absolute;
+   top: -14%;
+   left: 0;
+}
+.transform__father-perspective {
+   perspective: 400px;
+   perspective-origin: center;
+   position: absolute;
+   top: 38%;
+   right: 22%;
+   width: 400px;
+   height: 400px;
+}
+.transform__perspective:hover {
+   transform: rotateX(50deg);
+   transition: all 2s ease;
+}
+.transform__perspective:hover::before {
+   content: "perspective";
+   font-size: 30px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.transform__translate3d {
+   position: absolute;
+   top: 38%;
+   right: 0;
+   opacity: 0.1;
+}
+
+.translate3d-fon {
+   background-color: rgb(0, 0, 0);
+   opacity: 0.7;
+   position: absolute;
+   top: 37%;
+   right: 0;
+   width: 360px;
+   height: 379px;
+   border-radius: 40%;
+   filter: blur(10px);
+}
+.transform__translate3d:hover {
+   transform: translate3d(17px, 81px, 19px);
+   transition: all 2s ease;
+   position: absolute;
+   top: 35%;
+   right: 0;
+   opacity: 1;
+   z-index: 5;
+}
+.transform__translate3d:hover::before {
+   content: "transform: translate3d";
+   font-size: 30px;
+   position: absolute;
+   top: -14%;
+   left: 0;
+}
+
+.transform__father-scale3d {
+   position: absolute;
+   left: 0;
+   bottom: 6%;
+   perspective: 450px;
+}
+
+.transform__scale3d:hover {
+   transform: scale3d(1.9, 1.9, 1.9);
+   transition: all 2s ease;
+   position: absolute;
+   left: 19%;
+   bottom: 12%;
+}
+.transform__scale3d:hover::before {
+   content: "transform: scale3d";
+   font-size: 30px;
+   position: absolute;
+   top: -14%;
+   left: 25%;
+}
+.transform__father-rotate3d {
+   position: absolute;
+   left: 25%;
+   bottom: 4%;
+   perspective: 400px;
+   width: 400px;
+   height: 400px;
+}
+.transform__rotate3d:hover {
+   transform: rotate3d(1, 1, 1, 336deg);
+   transition: all 2s ease;
+   position: absolute;
+   left: 19%;
+   bottom: 0;
+}
+.transform__rotate3d:hover::before {
+   content: "transform: rotate3d";
+   font-size: 30px;
+   position: absolute;
+   top: -14%;
+   left: 0;
+}
+.transform__father-style {
+   position: absolute;
+   right: 23%;
+   bottom: 0;
+   perspective: 400px;
+   transform-style: preserve-3d;
+   width: 400px;
+   height: 400px;
+}
+.transform__transform-style:hover {
+   transform: rotateY(358deg);
+   transition: all 2s ease;
+   position: absolute;
+   left: 8%;
+   bottom: 16%;
+}
+.transform__transform-style:hover::before {
+   content: "transform-style";
+   font-size: 30px;
+   position: absolute;
+   top: -14%;
+   left: 0;
+}
+.transform__father-visabilyty {
+   position: absolute;
+   right: 4%;
+   bottom: 0;
+   perspective: 400px;
+}
+
+.transform__backface-visability {
+   position: relative;
+   width: 300px;
+   height: 500px;
+   transition: transform 2s;
+   transform-style: preserve-3d;
+}
+.transform__backface-visability:hover {
+   transform: rotateY(180deg);
+}
+.one,
+.two {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   backface-visibility: hidden;
+}
+
+.two {
+   transform: rotateY(180deg);
+}
+.transform__backface-visability:hover::before {
+   content: "backface-visability";
+   font-size: 30px;
+   position: absolute;
+   top: -24%;
+   left: 0;
+}
